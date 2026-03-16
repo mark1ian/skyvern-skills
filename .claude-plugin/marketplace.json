@@ -1,0 +1,13 @@
+{
+  "name": "Skyvern Skills Marketplace",
+  "owner": {
+    "name": "mark1ian"
+  },
+  "plugins": [
+    {
+      "name": "skyvern-browser-automation",
+      "source": "./plugins/skyvern-browser-automation",
+      "description": "Browser automation plugin and skills for Skyvern MCP"
+    }
+  ]
+}
