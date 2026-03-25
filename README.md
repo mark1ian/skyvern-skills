@@ -4,22 +4,44 @@ Canonical distribution source for Skyvern skills and Claude Code plugin installa
 
 This repository packages Skyvern browser automation for agent workflows and provides a single public source that can be used across Claude Code and cross-agent skills tooling.
 
-## What’s Included
+## What's Included
 
-This repository includes:
+- `.claude-plugin/marketplace.json` — Claude Code marketplace definition
+- `plugins/skyvern-browser-automation/.claude-plugin/plugin.json` — plugin package metadata
+- `plugins/skyvern-browser-automation/skills/skyvern-browser-automation/SKILL.md` — browser automation skill
+- `plugins/skyvern-browser-automation/.mcp.json` — MCP server configuration
 
-- a Claude Code marketplace definition in `.claude-plugin/marketplace.json`
-- a plugin package in `plugins/skyvern-browser-automation/.claude-plugin/plugin.json`
-- a Skyvern browser automation skill in `plugins/skyvern-browser-automation/skills/skyvern-browser-automation/SKILL.md`
-- an MCP configuration in `plugins/skyvern-browser-automation/.mcp.json`
+This repository serves as both a Claude Code plugin marketplace source and a skills package source for cross-agent installation flows.
 
-Together, these files allow the same repository to serve as both:
-- a Claude Code plugin marketplace source
-- a skills package source for cross-agent installation flows
+## Requirements
+
+- [Claude Code](https://claude.ai/claude-code) CLI
+- A Skyvern account and API key ([skyvern.com](https://www.skyvern.com))
 
 ## Install in Claude Code
 
-Add this repository as a marketplace in Claude Code:
+Add this repository as a marketplace source:
 
 ```bash
 /plugin marketplace add mark1ian/skyvern-skills
+```
+
+Then install the plugin:
+
+```bash
+/plugin install skyvern-browser-automation
+```
+
+## Repository Layout
+
+```
+skyvern-skills/
+├── .claude-plugin/marketplace.json
+└── plugins/
+    └── skyvern-browser-automation/
+        ├── .claude-plugin/plugin.json
+        ├── .mcp.json
+        └── skills/
+            └── skyvern-browser-automation/
+                └── SKILL.md
+```
