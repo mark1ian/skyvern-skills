@@ -1,6 +1,7 @@
 ---
 name: skyvern-browser-automation
 description: Browser automation via Skyvern MCP for navigation, form filling, authentication, structured data extraction, and multi-step workflows.
+trigger: skyvern
 ---
 
 # Skyvern Browser Automation
@@ -8,8 +9,6 @@ description: Browser automation via Skyvern MCP for navigation, form filling, au
 Use this skill when a task requires real browser interaction through Skyvern MCP.
 
 This skill enables agents to control a live browser session to navigate websites, fill forms, handle authentication, and extract structured data.
-
----
 
 ## When to Use
 
@@ -23,8 +22,6 @@ Use this skill when the task requires:
 - executing multi-step browser workflows
 - validating results after actions
 
----
-
 ## When NOT to Use
 
 Do not use this skill when:
@@ -33,8 +30,6 @@ Do not use this skill when:
 - the answer is already available in context
 - the task is purely informational or text-based
 - no external website interaction is required
-
----
 
 ## Execution Strategy
 
@@ -51,8 +46,6 @@ Follow this process when using the skill:
 
 Do not attempt to perform the entire workflow in a single step.
 
----
-
 ## Authentication Handling
 
 If the task requires login:
@@ -62,8 +55,6 @@ If the task requires login:
 - confirm successful login before continuing
 - do not assume authentication succeeded without verification
 - re-check page state if flow breaks
-
----
 
 ## Data Extraction Guidelines
 
@@ -75,8 +66,6 @@ When extracting data:
 - avoid including irrelevant content
 - validate extracted data against the page
 
----
-
 ## Multi-step Workflows
 
 For complex tasks:
@@ -86,8 +75,6 @@ For complex tasks:
 - confirm success before moving forward
 - report intermediate progress if needed
 - stop and explain if the workflow cannot continue
-
----
 
 ## Error Handling
 
@@ -99,8 +86,6 @@ If something fails:
 - avoid repeating failing actions blindly
 - clearly report blockers
 
----
-
 ## Output Requirements
 
 When returning results:
@@ -110,15 +95,13 @@ When returning results:
 - return structured data where applicable
 - include any limitations or missing data
 
----
-
 ## MCP Configuration
 
 This skill uses the Skyvern MCP endpoint:
 
+```
 https://api.skyvern.com/mcp
-
----
+```
 
 ## Example Tasks
 
