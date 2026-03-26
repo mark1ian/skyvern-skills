@@ -1,5 +1,8 @@
 {
   "name": "skyvern-browser-automation",
   "description": "Browser automation via Skyvern MCP for website navigation, form filling, authentication, structured extraction, and multi-step workflows.",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "author": {
+    "name": "Skyvern"
+  }
 }
