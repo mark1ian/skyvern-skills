@@ -2,6 +2,10 @@
 name: skyvern-browser-automation
 description: Browser automation via Skyvern MCP for navigation, form filling, authentication, structured data extraction, and multi-step workflows.
 trigger: skyvern
+license: MIT
+metadata:
+  author: mark1ian
+  version: "1.0.0"
 ---
 
 # Skyvern Browser Automation
