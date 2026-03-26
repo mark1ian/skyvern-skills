@@ -32,6 +32,14 @@ Then install the plugin:
 /plugin install skyvern-browser-automation
 ```
 
+## Install via npx skills (cross-agent)
+
+Works with Claude Code, Cursor, Codex, and 37+ other agents:
+
+```bash
+npx skills add mark1ian/skyvern-skills
+```
+
 ## Repository Layout
 
 ```
